@@ -20,7 +20,7 @@ public class DetailPageSteps extends BaseSteps {
     @Then("^I should see same price on detail section$")
     public void i_should_see_same_price_on_detail_section() throws Throwable {
         float detailPrice = GenericUtils.getPriceByFormattedString(detailPageActions.locators.detailItemPrice.getText());
-        Assert.assertTrue((float)GenericUtils.data.get("firstPrice") == detailPrice);
+        Assert.assertTrue("detail price is not the same as product search price",(float)GenericUtils.data.get("firstPrice") == detailPrice);
     }
 
     @When("^I add this item to the shopping cart$")

@@ -36,7 +36,7 @@ public class MicrosoftHomePageSteps extends BaseSteps {
     @Then("^I should see nav elements$")
     public void i_should_see_nav_elements() {
         SeleniumDriver.WaitForElementToBeClickable(microsoftHomePageActions.locators.logo);
-        Assert.assertTrue(microsoftHomePageActions.ValidateNavElements());
+        Assert.assertTrue("navigation elements are not showing as expected",microsoftHomePageActions.ValidateNavElements());
     }
 
     @When("^I Navigate to \"([^\"]*)\" link$")

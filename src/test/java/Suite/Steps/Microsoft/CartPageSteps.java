@@ -19,7 +19,7 @@ public class CartPageSteps extends BaseSteps {
 
     @Then("^I should see same price on shopping cart section$")
     public void i_should_see_same_price_on_shopping_cart_section() {
-        Assert.assertTrue(cartPageActions.ValidateItemPrices((float) GenericUtils.data.get("firstPrice")));
+        Assert.assertTrue("prices are not the same as product search",cartPageActions.ValidateItemPrices((float) GenericUtils.data.get("firstPrice")));
     }
 
     @When("^I set twenty products to buy$")
@@ -33,6 +33,6 @@ public class CartPageSteps extends BaseSteps {
         SeleniumDriver.WaitForLoadIcon(cartPageActions.locators.spinnerElement);
         //System.out.println(GenericUtils.getPriceByFormattedString(cartPageActions.locators.pricesOnScreen.get(2).getText()));
         //System.out.println((((float) GenericUtils.data.get("firstPrice")) * 20));
-        Assert.assertTrue(GenericUtils.getPriceByFormattedString(cartPageActions.locators.pricesOnScreen.get(2).getText()) == (((float) GenericUtils.data.get("firstPrice")) * 20));
+        Assert.assertTrue("total item is not calculated as expected",GenericUtils.getPriceByFormattedString(cartPageActions.locators.pricesOnScreen.get(2).getText()) == (((float) GenericUtils.data.get("firstPrice")) * 20));
     }
 }
