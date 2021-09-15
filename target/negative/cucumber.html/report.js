@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1594939400,
+  "duration": 1676892600,
   "status": "passed"
 });
 formatter.scenario({
@@ -73,42 +73,42 @@ formatter.match({
   "location": "AmazonHomePageSteps.i_navigate_to_amazon_site()"
 });
 formatter.result({
-  "duration": 985576100,
+  "duration": 1568723800,
   "status": "passed"
 });
 formatter.match({
   "location": "MicrosoftHomePageSteps.im_on_landing_page()"
 });
 formatter.result({
-  "duration": 908000,
+  "duration": 862200,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonHomePageSteps.i_navigate_to_new_customer_form()"
 });
 formatter.result({
-  "duration": 3760787700,
+  "duration": 3835164500,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonHomePageSteps.i_get_fake_data_from_api_response()"
 });
 formatter.result({
-  "duration": 3071623100,
+  "duration": 2455333500,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateAccountPageSteps.i_fill_the_name_and_email_fields()"
 });
 formatter.result({
-  "duration": 177048000,
+  "duration": 219566000,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateAccountPageSteps.i_navigate_to_condition_of_use_link()"
 });
 formatter.result({
-  "duration": 1071898400,
+  "duration": 1103200200,
   "status": "passed"
 });
 formatter.match({
@@ -121,25 +121,25 @@ formatter.match({
   "location": "TermsOfUsePageSteps.i_search_for_on_search_bar(String)"
 });
 formatter.result({
-  "duration": 1477851000,
+  "duration": 1755374100,
   "status": "passed"
 });
 formatter.match({
   "location": "TermsOfUsePageSteps.i_should_navigate_to()"
 });
 formatter.result({
-  "duration": 1491328000,
+  "duration": 2257217800,
   "status": "passed"
 });
 formatter.match({
   "location": "EchoSupportPageSteps.validate_the_elements_on_support_section()"
 });
 formatter.result({
-  "duration": 913525200,
+  "duration": 476370000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 4712810300,
+  "duration": 4714715000,
   "status": "passed"
 });
 });
